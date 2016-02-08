@@ -19,3 +19,5 @@ give the commit history with rename information.
 Git also supports a limited form of merging across renames.
 The two tools for assigning blame, git-blame(1) and git-annotate(1) both use the automatic rename detection code to track renames.
 
+Putting a comment on the end to see if it gets merged correctly.
+
