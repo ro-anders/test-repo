@@ -1,0 +1,21 @@
+Going to test git's ability to correctly merge when a file is changed by one person and moved by another.
+
+Here is some description of what Git will doi (just filler text really):
+Git has to interoperate with a lot of different workflows, for example some changes can come from patches, 
+where rename information may not be available. Relying on explicit rename tracking makes it impossible to 
+merge two trees that have done exactly the same thing, except one did it as a patch (create/delete) and one 
+did it using some other heuristic.
+
+On a second note, tracking renames is really just a special case of tracking how content moves in the tree. 
+In some cases, you may instead be interested in querying when a function was added or moved to a different file. 
+By only relying on the ability to recreate this information when needed, Git aims to provide a more flexible 
+way to track how your tree is changing.
+
+However, this does not mean that Git has no support for renames.
+The diff machinery in Git has support for automatically detecting renames, this is turned on by the '-M' 
+switch to the git-diff-* family of commands.
+The rename detection machinery is used by git-log(1) and git-whatchanged(1), so for example, 'git log -M' will 
+give the commit history with rename information.
+Git also supports a limited form of merging across renames.
+The two tools for assigning blame, git-blame(1) and git-annotate(1) both use the automatic rename detection code to track renames.
+
