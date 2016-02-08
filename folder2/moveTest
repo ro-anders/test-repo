@@ -1,5 +1,7 @@
 Going to test git's ability to correctly merge when a file is changed by one person and moved by another.
 
+I am adding a new line here to see how Git handles it.
+
 Here is some description of what Git will doi (just filler text really):
 Git has to interoperate with a lot of different workflows, for example some changes can come from patches, 
 where rename information may not be available. Relying on explicit rename tracking makes it impossible to 
